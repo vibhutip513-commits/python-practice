@@ -59,3 +59,132 @@
       
 # f=factorial(4)
 # # print("Factorial=",f)
+
+#\\\\\SESSION 2\\\\\\
+# def largest():
+#     a=12
+#     b=10
+#     c=11
+#     if a>b and a>c:
+#         print(f"{a} is largest")
+#     elif b>a and b>c:
+#         print(f"{b} is largest")
+#     else:
+#         print(f"{c} is largest")
+
+# largest()
+
+
+# sum of list
+# import math
+# a=[12,23,34,12,45]
+# print("sum=",sum(a))
+
+# def Sum():
+#     a=[12,23,34,12,45]
+#     sum=0
+#     for i in a:
+#         sum+=i
+#     print("Sum=",sum)
+    
+# Sum()
+        
+    
+
+
+
+# def even_odd():
+#     a=[12,15,20,33,40,51]
+#     e_count=0
+#     o_count=0
+#     for i in a:
+#         if i%2==0:
+#             e_count+=1
+#         else:
+#             o_count+=1
+#     print("Even Numbers: ",e_count)
+#     print("Odd Numbers: ",o_count)
+        
+# even_odd()
+
+
+##4. find the 2nd largest number
+"""sabse pehle function banao usme jo list di he add kar do ab logic k liye traversing karege 
+or if condition 
+"""
+# def Sec_Large():
+#     a=[10, 50, 30, 90, 70]
+  
+#     a.sort()
+#     print(a) 
+#     print(a[-2])    
+# Sec_Large()
+
+
+
+
+# Question 1
+
+# Find the smallest number in
+
+# numbers = [12, 3, 45, 2, 9]
+
+# Don't use
+
+# min()
+# sort()
+# Question 2
+
+# Count how many numbers are greater than 20.
+
+# numbers = [12,34,45,6,89,2,56]
+
+# Expected answer:
+
+# 4
+
+
+
+# #fIND THE SECOND LARGEST
+# def sec_largest(num):
+#     largest=num[0]
+#     second=num[0]
+#     for i in num:
+#         if i>largest:
+#             second=largest
+#             largest=i
+#         elif i>second and i!=largest:
+#             second =i
+#     return second
+# num=[10,20,50,32,90,70]
+# print("Second Largest= ",sec_largest(num))
+
+
+
+def sec_smallest(num):
+    smallest=num[0]
+    second=num[0]
+    for i in num:
+        if i<smallest:
+            second=smallest
+            smallest=i
+        elif i<second and i!=smallest:
+            second=i
+    return second
+
+num=[1,2,3,4,5,6]
+print("Second Smallest= ",sec_smallest(num))
+
+# Count how many numbers are greater than 20.
+def greater_then(numbers):
+    greter=0
+    for i in numbers:
+        if i>20:
+            greter+=1
+    return greter
+numbers = [12,34,45,6,89,2,56]
+print(greater_then(numbers)," are greater then 20")
+
+# 4
+
+
